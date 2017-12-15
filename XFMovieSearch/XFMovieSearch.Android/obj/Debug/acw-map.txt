@@ -2,6 +2,10 @@ XFMovieSearch.Droid.MainActivity, XFMovieSearch.Android;md549d8afb14e600dbeccd8c
 XFMovieSearch.Droid.MainActivity, XFMovieSearch.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md549d8afb14e600dbeccd8c2c1d84008d2.MainActivity
 XFMovieSearch.Droid.MainActivity;md549d8afb14e600dbeccd8c2c1d84008d2.MainActivity
 xfmoviesearch.droid.MainActivity;md549d8afb14e600dbeccd8c2c1d84008d2.MainActivity
+XFMovieSearch.Droid.Renderers.ScrollBarDisabledRenderer, XFMovieSearch.Android;md56f670b54618b963cfae5def2e8bbe86e.ScrollBarDisabledRenderer
+XFMovieSearch.Droid.Renderers.ScrollBarDisabledRenderer, XFMovieSearch.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md56f670b54618b963cfae5def2e8bbe86e.ScrollBarDisabledRenderer
+XFMovieSearch.Droid.Renderers.ScrollBarDisabledRenderer;md56f670b54618b963cfae5def2e8bbe86e.ScrollBarDisabledRenderer
+xfmoviesearch.droid.renderers.ScrollBarDisabledRenderer;md56f670b54618b963cfae5def2e8bbe86e.ScrollBarDisabledRenderer
 Android.Support.Design.Widget.Snackbar/SnackbarActionClickImplementor, Xamarin.Android.Support.Design;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar+SnackbarActionClickImplementor, Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar.SnackbarActionClickImplementor;android.support.design.widget.Snackbar_SnackbarActionClickImplementor

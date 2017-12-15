@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFMovieSearch.MovieDetailsPage"
+            BackgroundColor="WhiteSmoke"
+            Title="Movie Details">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="20,40,0,20"
+                         VerticalOptions="Start"
+                         HorizontalOptions="CenterAndExpand"
+                         Spacing="15">
+                <Image
+                Source="{Binding Movie.BackdropUrl}"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="200"
+                Aspect="AspectFill"
+                Margin="-20,-40,-20,0">
+                </Image>
+                <Grid
+                RowSpacing="6">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Row="0"
+                                Grid.Column="0"
+                                Margin="0,-80,0,0"
+                                Source="{Binding Movie.ImageUrl}"/>
+                    <StackLayout Grid.Row="0"
+                                Grid.Column="1"
+                                 Padding="10,0,0,0">
+                        <Label 
+                                Text="{Binding Movie.TitleAndYearString}"
+                                FontSize="Medium" 
+                                TextColor="#474747"
+                                FontAttributes="Bold"/>
+                        <Label
+                            Text="{Binding InfoString}"
+                            Margin="0,0,20,0"
+                            FontSize="Small"
+                            LineBreakMode="TailTruncation"/>
+                    </StackLayout>
+
+                </Grid>
+                <Label
+                    Text="{Binding Movie.Tagline}"
+                    TextColor="Black"
+                    FontSize="Medium"
+                    FontAttributes="Italic"/>
+            <ScrollView>
+                <Label Text="{Binding Movie.Description}"
+                        FontSize="Small" />
+            </ScrollView>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

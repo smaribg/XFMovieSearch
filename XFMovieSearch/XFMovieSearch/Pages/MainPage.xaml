@@ -2,25 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XFMovieSearch"
-             x:Class="XFMovieSearch.MainPage">
-
+             x:Class="XFMovieSearch.MainPage"
+             Title="Bonus Video">
     <ContentPage.Content>
         <StackLayout Margin="20,40,20,20"
                      VerticalOptions="Start"
                      Spacing="10">
-            <Label Text="Enter words in movie title:"
+            <Label Text="Enter you name:"
                 HorizontalOptions="Start" />
             <Entry x:Name="TitleEntry"
-                   Placeholder="Title"/>
+                   Placeholder="Name"/>
             <Button x:Name="SearchButton"
-                    Text="Get movie" 
+                    Text="Get movies" 
                     BorderColor="Color.Gray"
-                    Clicked="SearchButton_OnClicked"/>
-            <Label x:Name="MovieLable"
-                   Text="Hello"
-                   FontSize="Large"/>
+                    Clicked="SearchButton_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
-
-
 </ContentPage>

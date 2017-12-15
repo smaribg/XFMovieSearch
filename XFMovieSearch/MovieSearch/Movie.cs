@@ -1,69 +1,77 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace MovieSearch
 {
-    public class Movie
+    public class Movie : INotifyPropertyChanged
     {
-        public int Id
+        private readonly string Url = "http://image.tmdb.org/t/p/original";
+        private List<string> _actors;
+        private string _actorString;
+        private int _runTime;
+        private string _tagLine;
+
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public int Year { get; set; }
+        public List<String> Genres  { get; set; }
+        public double AverageVote { get; set; }
+        public string ImageUrl { get => Url + ImageRemote; }
+        public string BackdropUrl  { get => Url + BackdropRemote; }
+        public string ImageRemote { get; set;  }
+        public string BackdropRemote { get;  set; }
+        public string Description { get; set; }
+
+        public string TitleAndYearString
         {
-            get;
-            set;
+            get => Title + " (" + Year + ")";
         }
-        public string Title
+
+        public List<string> Actors
         {
-            get;
-            set;
+            get => _actors;
+            set
+            {
+                _actors = value;
+                ActorsString = String.Join(",", Actors);
+            }
         }
-        public int Year
+        public string ActorsString
         {
-            get;
-            set;
-        }
-        public string ImageRemote
-        {
-            get;
-            set;
-        }
-        public string ImageLocal
-        {
-            get;
-            set;
-        }
-        public string BackdropRemote
-        {
-            get;
-            set;
-        }
-        public string BackdropLocal
-        {
-            get;
-            set;
-        }
-        public string Description
-        {
-            get;
-            set;
-        }
-        public List<String> Actors
-        {
-            get;
-            set;
+            get => this._actorString;
+            set
+            {
+                this._actorString = value;
+                OnPropertyChanged();
+            }
         }
         public int Runtime
         {
-            get;
-            set;
+            get => this._runTime;
+            set
+            {
+                this._runTime = value;
+                OnPropertyChanged();
+            }
         }
-        public List<String> Genres
+
+        public string Tagline
         {
-            get;
-            set;
+            get => this._tagLine;
+            set
+            {
+                this._tagLine = value;
+                OnPropertyChanged();
+            }
         }
-        public double AverageVote
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
-            get;
-            set;
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

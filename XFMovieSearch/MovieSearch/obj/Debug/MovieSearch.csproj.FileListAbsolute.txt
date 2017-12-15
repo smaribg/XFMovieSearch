@@ -34,7 +34,7 @@ C:\Users\Lenovo\source\repos\XFMovieSearch\XFMovieSearch\MovieSearch\bin\Debug\M
 C:\Users\Lenovo\source\repos\XFMovieSearch\XFMovieSearch\MovieSearch\bin\Debug\DM.MovieApi.dll
 C:\Users\Lenovo\source\repos\XFMovieSearch\XFMovieSearch\MovieSearch\bin\Debug\DM.MovieApi.pdb
 C:\Users\Lenovo\source\repos\XFMovieSearch\XFMovieSearch\MovieSearch\bin\Debug\DM.MovieApi.xml
-C:\Users\Lenovo\source\repos\XFMovieSearch\XFMovieSearch\MovieSearch\obj\Debug\MovieSearch.csprojResolveAssemblyReference.cache
 C:\Users\Lenovo\source\repos\XFMovieSearch\XFMovieSearch\MovieSearch\obj\Debug\MovieSearch.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\source\repos\XFMovieSearch\XFMovieSearch\MovieSearch\obj\Debug\MovieSearch.dll
 C:\Users\Lenovo\source\repos\XFMovieSearch\XFMovieSearch\MovieSearch\obj\Debug\MovieSearch.pdb
+C:\Users\Lenovo\source\repos\XFMovieSearch\XFMovieSearch\MovieSearch\obj\Debug\MovieSearch.csprojResolveAssemblyReference.cache

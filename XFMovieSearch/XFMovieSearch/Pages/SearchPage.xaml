@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFMovieSearch.Pages.SearchPage"
+            xmlns:views="clr-namespace:XFMovieSearch.Views;assembly=XFMovieSearch"
+            BackgroundColor="WhiteSmoke"
+            Title="Search">
+  <ContentPage.Content>
+        <StackLayout Margin="0,20,0,0"
+                     VerticalOptions="FillAndExpand"
+                     Spacing="10">
+            <SearchBar x:Name="searchMovie"
+                        Placeholder="Enter title"
+                        Text="{Binding SearchText, Mode=TwoWay}"
+                        SearchCommand="{Binding SearchCommand}"
+                        BackgroundColor="White"
+                        Margin="20,0,20,20"
+                        HeightRequest="100">
+                <SearchBar.HeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double"
+                            Android="30.0"
+                            iOS="-1.0"
+                            WinPhone="-1">
+                    </OnPlatform>
+                </SearchBar.HeightRequest>
+            </SearchBar>
+            <ActivityIndicator IsRunning="{Binding IsLoading}"
+                               IsVisible="{Binding LoadingIsEnabled}"
+                               VerticalOptions="FillAndExpand"/>
+            <views:MovieListView/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
